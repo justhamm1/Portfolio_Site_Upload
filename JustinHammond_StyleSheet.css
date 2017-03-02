@@ -1,0 +1,208 @@
+/*Overall Page Background*/
+body{
+	background: #331F38; 
+	font-family: 'Libre Baskerville', Times, serif;
+	color: #F3E7C1;
+	}
+
+ /*Establishes a Grid System*/
+    box-sizing: border-box;
+
+/*Heading 1 Style*/
+	h1{ 
+        color: #F3E7C1;
+        /*font-size: 60em;*/
+    }
+
+/*Removes Bullet Style for List Items*/
+	ul {
+  		list-style-type: none;
+	}
+
+/*Hero Image Style*/
+	img.hero{
+		display: block;
+		/*position: center;*/
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+/*Name Plate Style*/
+	img.name_plate{
+		display: block;
+		vertical-align: left;
+		width: 80%;
+	}
+
+/*Thumbnail Image styles*/
+	img.thumb{
+		display: block;
+		vertical-align: center;
+		width: 100%;
+		opacity: .6;
+	}
+
+
+/*Main Page Footer Style*/
+	.footer_home{
+		position: bottom;
+		/*float: bottom;*/
+		right: 0;
+		bottom: 0;
+		left: 0;
+		/*padding: 1em;*/
+		background-color: #726994;
+		text-align: center
+		/*height: 10%;*/
+		/*width:100vw;*/
+	}
+
+/*Buttons for Main Page Footer Style*/
+	.footer-home_button{
+		/*color: white;
+		background: #332532;
+		font-size: 2em;
+		border: 0px;
+		padding: 14px 120px;*/
+		/*align-items: center;*/
+		/*float: center;*/
+		background-color: #726994;
+		display: inline-block;
+		font-size: 2em;
+		color: #F3E7C1;
+		border-style: none;
+		/*font-family: Helvetica, sans-serif;*/
+		font-family: 'Libre Baskerville', Times, serif;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+
+/*Footer Element for Rest of page*/
+	.footer{
+		/*position: fixed;*/
+		/*float: bottom;*/
+		/*width: auto;*/ /*Match this to the '.col_a' width*/
+		/*padding: 1em;*/
+		background-color: #726994;
+		text-align: center;
+		/*height: 10%;*/
+		/*float: left;*/
+		margin: 0 auto;
+		position: fixed;
+		bottom: 0;
+		display: inline-block;
+	}
+	
+/*Buttons for Footer Style*/
+	.footer-button{
+		/*color: white;
+		background: #332532;
+		font-size: 2em;
+		border: 0px;
+		padding: 14px 120px;*/
+		/*align-items: center;*/
+		/*float: center;*/
+		background-color: #726994;
+		display: inline-block;
+		font-size: 2em;
+		color: #F3E7C1;
+		border-style: none;
+		/*font-family: Helvetica, sans-serif;*/
+		font-family: 'Libre Baskerville', Times, serif;
+		/*margin-left: 2em;
+		margin-right: 2em;*/
+		padding-left: 0.8em;
+		padding-right: 1.5em;
+		/*width: ;*/
+		 /*Abby's Changes*/
+		/*margin-bottom: 1px;
+		margin-top: 10;*/
+		margin: 0 auto;
+
+	}
+
+/*Two Column Layout - A*/
+	.col_a{
+		/*width: 45%;
+		height: auto;
+		float: left;
+		background-color: : #644D52*/
+		/*position: absolute;*/
+		width: 35%; /*Match this to the '.footer' width*/
+		height: 100vh;
+		float: left;
+		/*border: 23px;*/ 
+		background-color: #331F38;
+		/*margin-right: 1em;*/
+		display: inline;
+	}
+/*Column A Text Element*/
+	.col_a_title{
+		text-align: center;
+		position: relative;
+		/*top: 15%;*/
+		/*color: white;*/
+		font-size: 4em;
+		padding-bottom: 3.5em;
+		padding-top: 3.5em;
+	}
+
+/*Two Column Layout - B*/
+	.col_b{
+		/*width: 45%;*/
+		float: right;
+		/*background-color: : #F77A52;*/
+		/*position: absolute;
+		right: 0;*/
+		width: 65%;
+		height: 100vh;
+		/*vertical-align: right;*/
+		/*border: 23px;*/ 
+		background-color: #6F9EB0;
+		/*margin-left: 1em;*/
+		display: inline;
+
+	}
+/*Column B Text Elements*/
+	.col_b_title{
+		text-align: left;
+		margin: 10%;
+		position: relative;
+		/*top: 5%;*/
+		/*color: #111111;*/
+		padding-bottom: 4.5em;
+		/*padding-top: 4.5em;*/
+	}
+/*Column C - Variation of Column B*/
+	.col_c{
+		float: right;
+		width: 65%;
+		background-color: #6F9EB0;
+		display: inline;
+	}
+	
+	.col_c_01{
+		float: right;
+		width: 65%;
+		background-color: #A0C1B8;
+		display: inline;
+	}
+
+/*Column C - Text Elements*/
+	.col_c_title{
+		text-align: center;
+		position: relative;
+		/*top: 15%;*/
+		/*color: white;*/
+		font-size: 2em;
+		padding-bottom: 0.5em;
+		/*padding-top: 3.5em;*/
+	}
+
+/*Master Layout Controller for Contact Page*/
+	#contact_page_org{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
