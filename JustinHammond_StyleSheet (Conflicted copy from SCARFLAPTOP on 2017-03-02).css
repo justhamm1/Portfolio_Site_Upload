@@ -43,11 +43,6 @@ body{
 	}
 
 /*Project Thumbnails style*/
-	img.pro_thumb{
-		display: block;
-		width: 100%;
-		opacity: .8;
-	}
 
 /*Profile Image*/
 	.img-self{
@@ -58,20 +53,6 @@ body{
 		margin-left: 30%;
     	margin-right: auto;
     	position: fixed;
-	}
-
-/*Social Media Images*/
-	.img_soc{
-		display: block;
-		text-align: right;
-		width: 20%;
-		border-radius: :75%;
-		margin: none;
-	}
-
-	.soc_align{
-		text-align: center;
-		margin: 0 auto;
 	}
 
 /*Main Page Footer Style*/
@@ -216,6 +197,21 @@ body{
 		display: inline;
 	}
 
+/*Column D - Particular Projects Style*/
+	.col_d{
+		float: right;
+		width: 32%;
+		background-color: #6F9EB0;
+		display: inline;
+	}
+	
+	.col_d_01{
+		float: right;
+		width: 32%;
+		background-color: #A0C1B8;
+		display: inline;
+	}
+
 /*Column C - Text Elements*/
 	.col_c_title{
 		text-align: center;
@@ -239,38 +235,10 @@ body{
 		width: 
 	}
 
-
-/*Column D - Particular Projects Style*/
-	.col_d{
-		float: right;
-		width: 32%;
-		background-color: #6F9EB0;
-		display: inline;
-		margin: none;
-		text-align: center;
-	}
-	
-	.col_d_01{
-		float: right;
-		width: 32%;
-		background-color: #A0C1B8;
-		display: inline;
-		text-align: center;
-		margin: 0 auto;
-		object-fit: none;
-	}
-
 /*Master Layout Controller for Contact Page*/
 	#contact_page_org{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-	}
-
-/*Draw Line*/
-	.hor_line{
-		width: 500px;
-		border-bottom: 2px solid #F3E7C1;
-		position: absolute;
 	}
 
