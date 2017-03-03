@@ -62,7 +62,7 @@ body{
 
 /*Social Media Images*/
 	.img_soc{
-		display: block;
+		/*display: inline-block;*/
 		text-align: right;
 		width: 20%;
 		border-radius: :75%;
@@ -72,6 +72,7 @@ body{
 	.soc_align{
 		text-align: center;
 		margin: 0 auto;
+		display: inline-block;
 	}
 
 /*Main Page Footer Style*/
