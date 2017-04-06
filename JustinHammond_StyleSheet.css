@@ -1,5 +1,6 @@
 /*Overall Page Background*/
 body{
+	margin: 0px;
 	background: #331F38; 
 	font-family: 'Libre Baskerville', Times, serif;
 	color: #F3E7C1;
@@ -13,18 +14,29 @@ body{
         color: #F3E7C1;
         /*font-size: 60em;*/
     }
+/*Style for the description text*/
+	.describe_text {
+		font-size: 0.5em;
+		color: white;
+	}
 
 /*Removes Bullet Style for List Items*/
 	ul {
   		list-style-type: none;
+  		padding: 0;
+	}
+
+	li{
+		padding: 0;
 	}
 
 /*Hero Image Style*/
 	img.hero{
 		display: block;
-		/*position: center;*/
+		margin: auto;
+		/*position: relative;
 		margin-left: auto;
-		margin-right: auto;
+		margin-right: auto;*/
 	}
 
 /*Name Plate Style*/
@@ -59,6 +71,11 @@ body{
     	margin-right: auto;
     	position: fixed;
 	}
+@media only screen and (max-device-width: 500px){
+	.img-self{
+		visibility: hidden;
+	}
+}
 
 /*Social Media Images*/
 	.img_soc{
@@ -77,11 +94,14 @@ body{
 
 /*Main Page Footer Style*/
 	.footer_home{
-		position: bottom;
+		width: 100%;
+		position: fixed;
+		bottom: 0.5em;
+		/*position: bottom, relative;*/
 		/*float: bottom;*/
-		right: 0;
+		/*right: 0;
 		bottom: 0;
-		left: 0;
+		left: 0;*/
 		/*padding: 1em;*/
 		background-color: #726994;
 		text-align: center
@@ -113,7 +133,7 @@ body{
 	.footer{
 		/*position: fixed;*/
 		/*float: bottom;*/
-		/*width: auto;*/ /*Match this to the '.col_a' width*/
+		width: auto; /*Match this to the '.col_a' width*/
 		/*padding: 1em;*/
 		background-color: #726994;
 		text-align: center;
@@ -121,9 +141,23 @@ body{
 		/*float: left;*/
 		margin: 0 auto;
 		position: fixed;
-		bottom: 0;
+		bottom: 0em;
 		display: inline;
+		z-index: 100;
+		width: 100%;
 	}
+
+@media only screen and (max-device-width: 800px){
+	.footer{
+		/*padding-left: 4em;
+		padding-right: 4em;*/
+		display: block;
+		margin: auto;
+		right: 0px;
+		left: 0px;
+		z-index: 100;
+	}
+}
 	
 /*Buttons for Footer Style*/
 	.footer-button{
@@ -143,12 +177,17 @@ body{
 		font-family: 'Libre Baskerville', Times, serif;
 		/*margin-left: 2em;
 		margin-right: 2em;*/
-		padding-left: 0.8em;
-		padding-right: 1.5em;
+		padding-left: 1em;
+		padding-right: 1em;
 		/*width: ;*/
-		margin: 0 auto;
-
+		/*margin: 0 auto;*/
 	}
+/*@media only screen and (max-device-width: 800px){
+	.footer-button{
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+}*/
 
 /*Two Column Layout - A*/
 	.col_a{
@@ -165,16 +204,60 @@ body{
 		/*margin-right: 1em;*/
 		display: inline;
 	}
+@media only screen and (max-device-width: 1250px){
+	.col_a{
+		/*text-align: center;
+		position: relative;
+		top: 15%;
+		font-size: 4em;
+		padding-bottom: 3.5em;
+		padding-top: 3.5em;*/
+		position: fixed;
+		top: 0px;
+		z-index: 100;
+		width: 100%;
+		margin: 0 auto;
+		height: 8em;
+	}
+}
 /*Column A Text Element*/
 	.col_a_title{
 		text-align: center;
-		position: relative;
+		position: fixed;
 		/*top: 15%;*/
 		/*color: white;*/
 		font-size: 4em;
 		padding-bottom: 3.5em;
 		padding-top: 3.5em;
+		padding-left: 0.2em;
 	}
+/*@media only screen and (max-device-width: 500px){
+	.col_a_title{
+		padding-top: 0em;
+		padding-bottom: 0em;
+	}
+}*/
+@media only screen and (max-device-width: 1250px){
+	.col_a_title{
+		/*text-align: center;
+		position: relative;
+		top: 15%;
+		font-size: 4em;*/
+		padding-bottom: 0.5em;
+		padding-top: 0.5em;
+		/*position: fixed;*/
+		top: 0px;
+		z-index: 100;
+		width: 100%;
+		/*margin: 0 auto;*/
+		/*height: 1em;*/
+	}
+}
+@media only screen and (min-device-width: 500px){
+	.col_a_title{
+		position: fixed;
+	}
+}
 
 /*Two Column Layout - B*/
 	.col_b{
@@ -184,7 +267,7 @@ body{
 		/*position: absolute;
 		right: 0;*/
 		width: 65%;
-		height: 100vh;
+		height: 100%;
 		/*vertical-align: right;*/
 		/*border: 23px;*/ 
 		background-color: #6F9EB0;
@@ -192,6 +275,12 @@ body{
 		display: inline;
 
 	}
+@media only screen and (max-device-width: 500px){
+	.col_b{
+		width: 100%;
+		padding-top: 8em;
+	}
+}
 /*Column B Text Elements*/
 	.col_b_title{
 		text-align: left;
@@ -202,20 +291,46 @@ body{
 		padding-bottom: 4.5em;
 		/*padding-top: 4.5em;*/
 	}
+
 /*Column C - Variation of Column B*/
-	.col_c{
+	.col_c_01{
 		float: right;
 		width: 65%;
 		background-color: #6F9EB0;
 		display: inline;
 	}
-	
-	.col_c_01{
+@media only screen and (max-device-width: 500px){
+	.col_c_01 {
+		width: 100%;
+	}
+}
+	.col_c_02{
 		float: right;
 		width: 65%;
 		background-color: #A0C1B8;
 		display: inline;
 	}
+@media only screen and (max-device-width: 500px){
+	.col_c_02{
+		width: 100%;
+	}
+}
+	.col_c_03{
+		float: right;
+		width: 65%;
+		background-color: #6F9EB0;
+		display: inline;
+		margin-bottom: 2.5em;
+	}
+@media only screen and (max-device-width: 500px){
+	.col_c_03{
+		float: right;
+		width: 100%;
+		background-color: #6F9EB0;
+		display: inline;
+		margin-bottom: 3em;
+	}
+}
 
 /*Column C - Text Elements*/
 	.col_c_title{
@@ -250,7 +365,13 @@ body{
 		margin: none;
 		text-align: center;
 	}
-	
+@media only screen and (max-device-width: 1250px){
+	.col_d{
+		width: 50%;
+		float: left;
+		padding-top: 8em;
+	}
+}	
 	.col_d_01{
 		float: right;
 		width: 32%;
@@ -260,7 +381,13 @@ body{
 		margin: 0 auto;
 		object-fit: none;
 	}
-
+@media only screen and (max-device-width: 1250px){
+	.col_d_01{
+		width: 50%;
+		float: left;
+		padding-top: 8em;
+	}
+}	
 /*Master Layout Controller for Contact Page*/
 	#contact_page_org{
 		display: flex;
@@ -274,4 +401,20 @@ body{
 		border-bottom: 2px solid #F3E7C1;
 		position: absolute;
 	}
-
+/*Mobile Column Fix*/
+@media only screen and (max-device-width: 500px){
+		.col_d{
+			padding-top: 12em;
+			margin-bottom: 5em;
+		}
+		.col_d_01{
+			padding-top:12em;
+			margin-bottom: 5em;
+		}
+		.col_a{
+			padding-bottom: 4em;
+		}
+		.col_c_03{
+			padding-bottom: 2.5em;
+		}
+	}

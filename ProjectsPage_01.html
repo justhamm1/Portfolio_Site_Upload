@@ -5,9 +5,11 @@
 	<link rel="stylesheet" href="JustinHammond_StyleSheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
 	<style>
-		.col_a{
-			position: fixed;
+	@media only screen and (max-device-width: 500px){
+		ul{
+			margin-top: 10em;
 		}
+	}
 	</style>
 
 </head>
@@ -17,43 +19,55 @@
 		<div class="col_a_title">Projects</div>
 		
 		<div class="footer">
+			<input class="footer-button" type="button" value="About Me" onclick="window.location.href='AboutMePage_01.html'" Projects/>
 			<input class="footer-button" type="button" value="Projects" onclick="window.location.href='ProjectsPage_01.html'" Projects/>
 			<input class="footer-button" type="button" value="Contact" onclick="window.location.href='ContactPage_01.html'" Projects/>
 		</div>
 	</div>
 
 	<ul>
-		<li><div class="col_c">
+		<li><div class="col_c_01">
 				<div class="col_c_title">
 					<a href="ShortFilms_01.html">
 						<img src="Short01.jpg" alt="Short Films Category" class="thumb">
 					</a>
 						Short Films
+						<div class="describe_text">
+							A series of videos prductions I have created or been a part of.
+						</div>
 				</div>
 			</div>
 		</li>
-		<li><div class="col_c_01">
+		<li><div class="col_c_02">
 				<div class="col_c_title">
 					<a href="Animations_01.html">
 						<img src="Ani_02.jpg" alt="Animations Category" class="thumb">
 					</a>
 						Animations
+						<div class="describe_text">
+							A collection of animation works I have created.
+						</div>
 				</div>
 			</div>
 		</li>
-		<li><div class="col_c">
+		<li><div class="col_c_03">
 				<div class="col_c_title">
 					<a href="Games_01.html">
 						<img src="Games_01.jpg" alt="Games Made Category" class="thumb">	
 					</a>
 						Games
+						<div class="describe_text">
+							A collection of gameplay videos for games I have developed.
+						</div>
 					
 				</div>
 			</div>
 		</li>
 	</ul>
 
+	<a href="HomePage_01.html">
 	<img class="img-self" src="Profile_Icon.jpg" atl="Justin Hammond Headshot">
+	</a>
 
 </body>
 </html>
